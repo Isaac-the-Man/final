@@ -1,5 +1,5 @@
-const normList = ['norm', 'norm2', 'norm3', 'norm', 'norm2', 'norm3'];
-const urgeList = ['norm', 'norm2', 'norm3'];
+const normList = [];
+const urgeList = [];
 
 
 function _newTask(list, name) {
