@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../template.css">
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <title>Quiz Game</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Wierd Quiz Game</h1>
+      <div class="board">
+
+        <div class="card">
+          <button class="btn btn-left transparent" onclick="checkTrue()">True</button>
+          <div class="question q1 transparent">
+            <h1>Question</h1>
+            Apples originate from South America. F
+          </div>
+          <div class="question q2 transparent">
+            <h1>Question</h1>
+            An Ostrich's eye is bigger than its brain. T
+          </div>
+          <div class="question q3 transparent">
+            <h1>Question</h1>
+            Los Angeles is the most populous city in the U.S. F
+          </div>
+          <div class="question q4 transparent">
+            <h1>Question</h1>
+            One in every 200 men on Earth is descended from Genghis Khan T
+          </div>
+          <div class="question q5 transparent">
+            <h1>Question</h1>
+            Humans share 95% of their DNA with bananas. F
+          </div>
+          <div class="question q6 transparent">
+            <h1>Question</h1>
+            Tokyo alone has a greater population than Canada. T
+          </div>
+          <div class="question q7 transparent">
+            <h1>Question</h1>
+            Most kidnapped kids are taken by strangers. F
+          </div>
+          <div class="question q8 transparent">
+            <h1>Question</h1>
+            Fifteen percent of all daily Google searches have never been searched before. T
+          </div>
+          <div class="question q9 transparent">
+            <h1>Question</h1>
+            There are more libraries in the U.S. than Mc Donald's. T
+          </div>
+          <div class="question q10 transparent">
+            <h1>Question</h1>
+            There is no word that rhymes with Orange. T
+          </div>
+          <button class="btn btn-right transparent" onclick="checkFalse()">False</button>
+        </div>
+
+        <div class="true-false-display transparent">
+          <img src="../../images/red_circle.png">
+          <button class="btn" onclick="next()">CONTINUE</button>
+        </div>
+
+        <div class="scoreboard transparent">
+          <div class="correct">
+            Correct: 8
+          </div>
+          <div class="wrong">
+            Wrong: 2
+          </div>
+        </div>
+
+      </div>
+      <button class="btn return-btn" onclick="back()">&lt;-&nbsp;RETURN</button>
+    </div>
+
+  </body>
+  <script src="master.js"></script>
+</html>

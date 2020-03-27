@@ -1,0 +1,102 @@
+body {
+  background-image: url('../../images/bg3.jpg');
+}
+
+.digital-rockband {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.drum-board {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "drum1"
+  "drum2"
+  "drum3";
+}
+.drum1 {
+  grid-area: drum1;
+}
+.drum2 {
+  grid-area: drum2;
+}
+.drum3 {
+  grid-area: drum3;
+}
+.drum {
+  padding: 10px 20px;
+  background-color: #00c853;
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.drum:hover {
+  opacity: 0.7;
+}
+.drum-play {
+  border: 5px #b71c1c dashed;
+}
+
+.piano-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: solid black 2px;
+  border-bottom: solid black 2px;
+  border-top: solid black 2px;
+  position: relative;
+}
+.piano-key {
+  min-width: 50px;
+  min-height: 300px;
+  border-right: solid black 2px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.piano-key:hover {
+  background-color: Khaki;
+  opacity: 0.7;
+}
+.piano-key-hover {
+  background-color: Khaki;
+  opacity: 0.7;
+}
+.piano-black {
+  min-width: 30px;
+  min-height: 150px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+.blank1 {
+  left: 14.2%;
+  transform: translateX(-50%);
+}
+.blank2 {
+  left: 28.4%;
+  transform: translateX(-50%);
+}
+.blank3 {
+  left: 56.8%;
+  transform: translateX(-50%);
+}
+.blank4 {
+  left: 71%;
+  transform: translateX(-50%);
+}
+.blank5 {
+  left: 85.2%;
+  transform: translateX(-50%);
+}

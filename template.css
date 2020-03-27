@@ -1,0 +1,58 @@
+body {
+  --color-primary: #212121;
+  --color-secondary: #00c853;
+  --color-secondary: #00c853;
+  --font-primary: white;
+  --font-secondary: black;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-primary);
+  font-family: 'Open Sans Condensed';
+  font-family: 'Audiowide';
+}
+.btn {
+  font-family: 'Open Sans Condensed';
+  font-family: 'Audiowide';
+  font-size: 18px;
+  background-color: var(--color-secondary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+}
+.btn:hover {
+  transform: scale(2,2);
+  background-color: white;
+  color: #ff8a80;
+}
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 70vw;
+  min-height: 60vh;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.return-btn {
+  margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+body {
+  background-image: url('../../images/bg2.jpg');
+}
+
+.card {
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(224, 224, 224, 0.5);
+  border-radius: 15px;
+}
+.card > * {
+  padding: 20px;
+}
+.btn-left {
+  border-radius: 15px 0px 0px 15px !important;
+}
+.btn-right {
+  border-radius: 0px 15px 15px 0px !important;
+}
+.transparent {
+  display: none !important;
+}
+
+.true-false-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.true-false-display img {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.scoreboard {
+  display: flex;
+  padding: 30px;
+  color: black;
+}
+.correct {
+  padding: 30px;
+  background-color: rgba(3, 169, 244, 0.5);
+}
+.wrong {
+  padding: 30px;
+  background-color: rgba(255, 23, 68, 0.5);
+}

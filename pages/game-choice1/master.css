@@ -1,0 +1,70 @@
+body {
+  background-image: url('../../images/bg1.jpg');
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+  'p1-title p-streaks p2-title'
+  'p1-score dice-pic p2-score'
+  'roll-turn p-status end-turn';
+}
+.game-container * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.p1-title {
+  grid-area: p1-title;
+  background-color: rgba(3, 169, 244, 0.5);
+}
+.p2-title {
+  grid-area: p2-title;
+  background-color: rgba(255, 23, 68, 0.5);
+}
+.p1-score {
+  grid-area: p1-score;
+  background-color: rgba(224, 224, 224, 0.5);
+  color: black;
+}
+.p2-score {
+  grid-area: p2-score;
+  background-color: rgba(224, 224, 224, 0.5);
+  color: black;
+}
+.p-streaks {
+  grid-area: p-streaks;
+  background-color: rgba(224, 224, 224, 0.5);
+}
+.dice-pic {
+  grid-area: dice-pic;
+  opacity: 0.9;
+  background-color: rgba(224, 224, 224, 0.5);
+}
+.dice-pic img {
+  max-width: 150px;
+  max-height: 150px;
+}
+.roll-turn {
+  grid-area: roll-turn;
+}
+.end-turn {
+  grid-area: end-turn;
+}
+.submit-btn {
+  border-radius: 0 !important;
+}
+.p-status {
+  grid-area: p-status;
+  background-color: rgb(255, 193, 7);
+}
+.target {
+  border: 5px solid rgb(255, 193, 7);
+}
+.disabled {
+  pointer-events: none;
+  background-color: rgba(158, 158, 158,1.0);
+}

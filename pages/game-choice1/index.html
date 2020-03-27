@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../template.css">
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <title>Dice Game</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Dice Game</h1>
+      <div class="board">
+        <div class="game-container">
+          <div class="p1-title target">Player 1</div>
+          <div class="p1-score">Score: 0</div>
+          <div class="p2-title">Player 2</div>
+          <div class="p2-score">Score: 0</div>
+          <div class="p-streaks">Accumulated: 0</div>
+          <div class="dice-pic"><img src="../../images/dices/dice1.png"></div>
+          <button class="roll-turn submit-btn btn" onclick="rollDice()">ROLL</button>
+          <button class="end-turn submit-btn btn" onclick="endDice()">END</button>
+          <div class="p-status">p1's turn!</div>
+        </div>
+      </div>
+      <button class="btn return-btn" onclick="back()">&lt;-&nbsp;RETURN</button>
+    </div>
+
+  </body>
+  <script src="master.js"></script>
+</html>

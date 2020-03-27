@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <title>Js Games</title>
+  </head>
+  <body>
+
+    <!-- title text -->
+    <div class="animation-down text-shadow center-title">
+      <h1>Javascript Games</h1>
+    </div>
+
+    <!-- start button -->
+    <div class="animation-down center-startBtn">
+      <button class="btn box-shadow" onclick="popup()">START</button>
+    </div>
+
+    <!-- popup -->
+    <div class="popup-container box-shadow transparent">
+      <div class="target game-choice game-choice1">
+        <h1>Dice Game !!!</h1>
+        2 players take turns rolling a dice.
+        On your turn you can roll or end turn.
+        You lose your score if you rolled 1.
+        First to reach 100 wins !
+        <img src="images/dice.png">
+      </div>
+      <div class="transparent game-choice game-choice2">
+        <h1>Quiz Game !!!</h1>
+        A series of interesting questions.
+        For each correct answer, receives one point.
+        How many point can you score?
+        <img src="images/quiz.png">
+      </div>
+      <div class="transparent game-choice game-choice3">
+        <h1>Digital Rock Band</h1>
+        An online musical sandbox game for you to explore, create, and compose music to your own taste!
+        <img src="images/instrument.png">
+      </div>
+      <div class="transparent game-choice game-choice4">
+        <h1>To Do List</h1>
+        Add and remove tasks to your to do list.
+        Keep tracks of things you want to do!
+        Featuring urgent and normal list.
+        <img src="images/todo.png">
+      </div>
+      <div class='center btn-left'>
+        <button class="btn" onclick="prevGame()">&lt;</button>
+      </div>
+      <div class='center btn-right'>
+        <button class="btn" onclick="nextGame()">&gt;</button>
+      </div>
+      <div class="center btn-play">
+        <button class="btn" onclick="openGame()">play</button>
+      </div>
+      <div class="center btn-close">
+        <button class="btn" onclick="closePopup()">close</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="master.js"></script>
+</html>
